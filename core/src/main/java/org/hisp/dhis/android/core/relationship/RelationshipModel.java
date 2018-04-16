@@ -28,9 +28,7 @@
 
 package org.hisp.dhis.android.core.relationship;
 
-import android.content.ContentValues;
 import android.database.Cursor;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import com.gabrielittner.auto.value.cursor.ColumnName;
@@ -55,9 +53,6 @@ public abstract class RelationshipModel extends BaseDataModel {
     public static Builder builder() {
         return new $$AutoValue_RelationshipModel.Builder();
     }
-
-    @NonNull
-    public abstract ContentValues toContentValues();
 
     @Nullable
     @ColumnName(Columns.TRACKED_ENTITY_INSTANCE_A)
